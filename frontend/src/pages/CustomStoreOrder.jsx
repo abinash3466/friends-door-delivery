@@ -13,7 +13,7 @@ const CustomStoreOrder = () => {
   const [address, setAddress] = useState('Alwarkurichi Center, TN');
   const [lat, setLat] = useState('8.7833');
   const [lng, setLng] = useState('77.3833');
-  
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -94,7 +94,7 @@ const CustomStoreOrder = () => {
               <input
                 type="text"
                 required
-                placeholder="e.g. Ganesh Provision Store or Local Medicals"
+                placeholder="e.g. Vasantham Supermarket (Ambasamudram) or Local Pharmacy"
                 value={storeName}
                 onChange={(e) => setStoreName(e.target.value)}
                 className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-transparent text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/50 focus:border-brand-teal text-slate-800 dark:text-white"
@@ -122,7 +122,7 @@ const CustomStoreOrder = () => {
                 placeholder="e.g. Purchase fresh packet, check expiry date"
                 value={instructions}
                 onChange={(e) => setInstructions(e.target.value)}
-                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-transparent text-sm focus:outline-none"
+                className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-transparent text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/50 focus:border-brand-teal text-slate-800 dark:text-white"
               />
             </div>
 
@@ -154,7 +154,7 @@ const CustomStoreOrder = () => {
                   required
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
-                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-transparent text-sm focus:outline-none"
+                  className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-transparent text-sm focus:outline-none focus:ring-2 focus:ring-brand-teal/50 focus:border-brand-teal text-slate-800 dark:text-white font-semibold"
                 />
               </div>
             </div>
